@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Pages.VideoLog.VideoLog"
+             xmlns:video="clr-namespace:TGUApp.Presentation.Renderers"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible"  MenuButtonState="Visible"></view:NavBar>
+            <view:Heading x:Name="Heading" MainTitle="Your Video Log" HorizontalOptions="Center"></view:Heading>
+            <video:CameraViewer x:Name="VideoElement" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></video:CameraViewer>
+            <StackLayout Orientation="Vertical">
+                <!--<Button x:Name="Switch" Text="Switch Camera" Clicked="Switch_Clicked" HorizontalOptions="Start"></Button>
+                <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand">-->
+                    <Button x:Name="StartRecording" Text="Start Recording" Clicked="StartRecording_Clicked"></Button>
+                    <Button x:Name="StopRecording" Text="Stop Recording" IsEnabled="false" Clicked="StopRecording_Clicked"></Button>
+                <!--</StackLayout>-->
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

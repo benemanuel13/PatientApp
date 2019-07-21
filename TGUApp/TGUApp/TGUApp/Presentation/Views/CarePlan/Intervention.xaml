@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Views.CarePlan.Intervention">
+  <ContentView.Content>
+      <StackLayout Margin="0, 0, 0, 20" HorizontalOptions="FillAndExpand">
+            <Grid HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Intervention Category:" TextColor="White"></Label>
+                <Label Grid.Column="1" x:Name="InterventionCategory" TextColor="LightBlue"></Label>
+                <Label Grid.Row="1" Text="Intervention Type:" TextColor="White"></Label>
+                <Label Grid.Row="1" Grid.Column="1" x:Name="InterventionType" TextColor="LightBlue"></Label>
+                <Label Grid.Row="2" Text="Client Agreed:" TextColor="White"></Label>
+                <Label Grid.Row="2" Grid.Column="1" x:Name="ClientAgreed" TextColor="LightBlue"></Label>
+                <Label Grid.Row="3" Text="Section 117:" TextColor="White"></Label>
+                <Label Grid.Row="3" Grid.Column="1" x:Name="Section117" TextColor="LightBlue"></Label>
+            </Grid>
+            <Label Text="Goals:" TextColor="White"></Label>
+            <Label x:Name="Goals" TextColor="LightCoral" Margin="10, 0, 0, 0"></Label>
+            <Label Text="Activities:" TextColor="White"></Label>
+            <Label x:Name="Activities" TextColor="LightCoral" Margin="10, 0, 0, 0"></Label>
+            <Label Text="Client's View:" TextColor="White"></Label>
+            <Label x:Name="ClientsView" TextColor="LightCoral" Margin="10, 0, 0, 0"></Label>
+            <Label Text="Main Person Responsible:" TextColor="White"></Label>
+            <Label x:Name="MainPerson" TextColor="LightBlue"></Label>
+            <Grid HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Planned / Start Date:" TextColor="White"></Label>
+                <Label Grid.Column="1" x:Name="StartDate" TextColor="White"></Label>
+                <Label Grid.Row="1" Text="Anticipated End Date:" TextColor="White"></Label>
+                <Label Grid.Row="1" Grid.Column="1" x:Name="EndDate" TextColor="White"></Label>
+            </Grid>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

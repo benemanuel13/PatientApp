@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.LanguagePicker"
+             xmlns:shared="clr-namespace:TGUApp.Presentation.Views.Shared"
+             x:Class="TGUApp.Presentation.Pages.LanguagePicker.LanguagePicker"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Padding="5, 5, 5, 5" Style="{StaticResource StackStyle}">
+            <shared:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible"  MenuButtonState="Hidden"></shared:NavBar>
+            <shared:Heading x:Name="Heading" MainTitle="Choose Language" HorizontalOptions="Center"></shared:Heading>
+            <view:LanguagePickerList x:Name="Languages"></view:LanguagePickerList>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

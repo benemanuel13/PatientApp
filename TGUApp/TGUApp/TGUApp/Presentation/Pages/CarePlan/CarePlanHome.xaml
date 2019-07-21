@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="TGUApp.Presentation.Pages.CarePlan.CarePlanHome"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible"  MenuButtonState="Visible"></view:NavBar>
+            <view:Heading x:Name="Heading" MainTitle="Your Care Plan" HorizontalOptions="Center"></view:Heading>
+            <cv:CarouselViewControl x:Name="PlanViews" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ShowIndicators="True"></cv:CarouselViewControl>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

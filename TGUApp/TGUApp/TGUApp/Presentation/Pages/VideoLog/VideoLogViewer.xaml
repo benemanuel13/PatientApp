@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Pages.VideoLog.VideoLogViewer"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             xmlns:video="clr-namespace:TGUApp.Presentation.Renderers"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible" MenuButtonState="Hidden"></view:NavBar>
+            <view:Heading x:Name="Heading" MainTitle="Video Log Video" HorizontalOptions="Center"></view:Heading>
+            <video:VideoPlayer x:Name="VideoElement" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></video:VideoPlayer>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

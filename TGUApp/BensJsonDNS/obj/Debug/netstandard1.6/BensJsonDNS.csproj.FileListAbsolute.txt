@@ -1,0 +1,10 @@
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\obj\Debug\netstandard1.6\BensJsonDNS.csprojAssemblyReference.cache
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\obj\Debug\netstandard1.6\BensJsonDNS.csproj.CoreCompileInputs.cache
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\obj\Debug\netstandard1.6\BensJsonDNS.AssemblyInfoInputs.cache
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\obj\Debug\netstandard1.6\BensJsonDNS.AssemblyInfo.cs
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\bin\Debug\netstandard1.6\BensJsonDNS.deps.json
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\bin\Debug\netstandard1.6\BensJsonDNS.dll
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\bin\Debug\netstandard1.6\BensJsonDNS.pdb
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\obj\Debug\netstandard1.6\XamlC.stamp
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\obj\Debug\netstandard1.6\BensJsonDNS.dll
+C:\Users\Ben\source\repos\vanGoghEvents\BensJsonDNS\obj\Debug\netstandard1.6\BensJsonDNS.pdb

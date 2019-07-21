@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Views.CarePlan.CarePlanCover">
+  <ContentView.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label Style="{StaticResource HeadingText}" Grid.Row="1">Date Of Last Review:</Label>
+                <Label Style="{StaticResource NormalText}" Grid.Row="2" x:Name="ReviewDate">01/01/2019</Label>
+                <Label Style="{StaticResource HeadingText}" Grid.Row="4">NHS Number:</Label>
+                <Label Style="{StaticResource NormalText}" Grid.Row="5" x:Name="NHSNumber">12345678</Label>
+                <Label Style="{StaticResource HeadingText}" Grid.Row="7">CPA Level:</Label>
+                <Label Style="{StaticResource NormalText}" Grid.Row="8" x:Name="CPALevel">3</Label>
+                <Label Style="{StaticResource HeadingText}" Grid.Row="10">Care Co-Ordinator:</Label>
+                <Label Style="{StaticResource NormalText}" Grid.Row="11" x:Name="CareCoordinator">Fred Bloggs</Label>
+            </Grid>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Pages.VideoLog.VideoLogHome"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible" MenuButtonState="Hidden"></view:NavBar>
+            <view:Heading x:Name="Heading" MainTitle="Video Log Videos" HorizontalOptions="Center"></view:Heading>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="RecordButton" Style="{StaticResource ButtonStyle}" Text="Record Video (front camera)" Grid.Row="1" Clicked="RecordButton_Clicked" />
+                <Button x:Name="RecordBackButton" Style="{StaticResource ButtonStyle}" Text="Record Video (back camera)" Grid.Row="3" Clicked="RecordBackButton_Clicked" />
+                <Button x:Name="ViewButton" Style="{StaticResource ButtonStyle}" Text="View Video" Grid.Row="5" Clicked="ViewButton_Clicked" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

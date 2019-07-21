@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             x:Class="TGUApp.Presentation.Pages.TeamContact.TeamContact"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible"  MenuButtonState="Visible"></view:NavBar>
+            <view:Heading x:Name="Heading" MainTitle="Team Contact Details" HorizontalOptions="Center"></view:Heading>
+            <StackLayout Orientation="Horizontal">
+                
+            </StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label FontAttributes="Bold" TextColor="LightBlue" Text="Who" WidthRequest="100"></Label>
+                <Label Grid.Column="1" FontAttributes="Bold" TextColor="LightBlue" Text="Role" WidthRequest="100"></Label>
+                <Label Grid.Column="2" FontAttributes="Bold" TextColor="LightBlue" Text="Contact Number"></Label>
+                <Label Grid.Row="1" Text="Paul Bennett" WidthRequest="100" TextColor="White"></Label>
+                <Label Grid.Row="1" Grid.Column="1" Text="CPN" WidthRequest="100" TextColor="White"></Label>
+                <Label Grid.Row="1" Grid.Column="2" Text="01622 723100" TextColor="White"></Label>
+                <Label Grid.Row="2" Text="Dr Kingham" WidthRequest="100" TextColor="White"></Label>
+                <Label Grid.Row="2" Grid.Column="1" Text="RC" WidthRequest="100" TextColor="White"></Label>
+                <Label Grid.Row="2" Grid.Column="2" Text="01622 723101" TextColor="White"></Label>
+                <Label Grid.Row="3" Text="Crisis Team" WidthRequest="100" TextColor="White"></Label>
+                <Label Grid.Row="3" Grid.Column="1" Text="" WidthRequest="100" TextColor="White"></Label>
+                <Label Grid.Row="3" Grid.Column="2" Text="01622 723121" TextColor="White"></Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

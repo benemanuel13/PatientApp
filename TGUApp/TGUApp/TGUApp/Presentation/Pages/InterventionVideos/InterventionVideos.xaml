@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             x:Class="TGUApp.Presentation.Pages.InterventionVideos.InterventionVideos"
+             xmlns:video="clr-namespace:TGUApp.Presentation.Renderers"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible"  MenuButtonState="Visible"></view:NavBar>
+            <view:Heading x:Name="Heading" MainTitle="Intervention Videos" HorizontalOptions="Center"></view:Heading>
+            <!--<forms:MediaElement x:Name="VideoElement" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="240" Source="ms-appx:///TGUTest.mp4" AreTransportControlsEnabled="True"></forms:MediaElement>-->
+            <video:VideoPlayer x:Name="VideoElement" FileName="Test.mp4" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="240"></video:VideoPlayer>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

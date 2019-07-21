@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Views.VideoLog.VideoEntry">
+  <ContentView.Content>
+        <StackLayout Orientation="Horizontal" Margin="5, 5, 5, 0" HorizontalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical">
+                <Label x:Name="FileName" TextColor="White" FontSize="Medium" FontAttributes="Bold"></Label>
+                <Label x:Name="DateTime" TextColor="LightSkyBlue" FontSize="Medium" FontAttributes="Bold"></Label>
+            </StackLayout>
+            <Grid HorizontalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button x:Name="ViewVideo" Text="View" Clicked="ViewVideo_Clicked"></Button>
+                <Button x:Name="UploadVideo" Grid.Column="1" Text="Upload" Clicked="UploadVideo_Clicked"></Button>
+                <Label x:Name="VideoUploaded" Grid.Column="1" Text="Uploaded" TextColor="LightSkyBlue" FontSize="Medium" IsVisible="False"></Label>
+                <Label x:Name="VideoUploading" Grid.Column="1" Text="Uploading" TextColor="LightGreen" FontSize="Medium" IsVisible="False"></Label>
+                <Button x:Name="DeleteVideo" Grid.Row="1" Grid.Column="1" Text="Delete" Clicked="DeleteVideo_Clicked"></Button>
+            </Grid>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

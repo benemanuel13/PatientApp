@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Views.Shared.NavBar"
+             xmlns:util="clr-namespace:TGUApp.Utility">
+    <ContentView.Content>
+      <StackLayout BackgroundColor="Black" Orientation="Horizontal" HeightRequest="50" HorizontalOptions="FillAndExpand">
+            <Image x:Name ="BackButton" Source="{util:ImageResource TGUApp.Presentation.Images.BlankBackButton.jpg}"
+                   HeightRequest="50"
+                   WidthRequest="50" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Start" 
+                    />
+            <!--<Image Source="{util:ImageResource vanGoghEvents.Presentation.Images.LogoIcon.jpg}"
+                   HeightRequest="50"
+                   WidthRequest="50" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Start" 
+                    />-->
+            <Label Text="Prototype Patient App" FontSize="Large" FontAttributes="Bold" TextColor="White"
+                   VerticalOptions="Center" HorizontalOptions="Start"></Label>
+            <!--<Label x:Name="MainTitle" Text="Home Page" FontSize="Medium" TextColor="White"
+                   VerticalOptions="Center" HorizontalOptions="Center"></Label>-->
+            <Image 
+                x:Name ="MenuButton" Source="{util:ImageResource TGUApp.Presentation.Images.Menu.jpg}"
+                   HeightRequest="50"
+                   WidthRequest="50" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

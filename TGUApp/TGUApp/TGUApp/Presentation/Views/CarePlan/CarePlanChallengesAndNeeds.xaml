@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Views.CarePlan.CarePlanChallengesAndNeeds">
+  <ContentView.Content>
+      <StackLayout>
+            <Label x:Name="Title" Text="" TextColor="LightSkyBlue" FontAttributes="Bold" />
+            <Grid HorizontalOptions="FillAndExpand" Margin="0, 0, 0, 20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Category:" TextColor="White"></Label>
+                <Label Grid.Column="1" x:Name="Category" TextColor="LightBlue"></Label>
+                <Label Grid.Row="1" Text="Sub Category:" TextColor="White"></Label>
+                <Label Grid.Column="1" Grid.Row="1" x:Name="SubCategory" TextColor="LightBlue"></Label>
+            </Grid>
+            <ScrollView>
+                <StackLayout x:Name="Interventions">
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

@@ -1,0 +1,43 @@
+﻿@using TGUWeb.Models.WebApiModels
+@model List<PatientVideo>
+
+@{
+    ViewBag.Title = "Patient Videos";
+}
+
+<h2>Patient Videos</h2>
+
+<script language="javascript">
+    function SetVideoUrl(url)
+    {
+        var vp = document.getElementById('videoplayer');
+        vp.src = url;
+        vp.play();
+    }
+</script>
+
+<div class="row">
+    <div class="col-md-3" style="height: 480px; overflow: scroll;">
+        <table>
+            <thead>
+                <tr>
+                    <td style="font-weight:bolder; width:175px;">File Name</td>
+                    <td style="font-weight:bolder; width:175px;">Uploaded</td>
+                    <td></td>
+                </tr>
+            </thead>
+            @foreach (PatientVideo video in Model)
+            {
+                <tr style="border-bottom:thin; border-bottom-width:thin; border-bottom-color: blueviolet;">
+                    <td>@video.FileName <br /> &nbsp;</td>
+                    <td>@video.Date <br /> @video.Time</td>
+                    <td><button onclick="SetVideoUrl('http://tguapp.benemanuel.net/PatientVideoFiles/' + '@video.FileName')">Play</button></td>
+                </tr>
+            }
+        </table>
+    </div>
+
+    <div class="col-md-6">
+        <video id="videoplayer" controls width="480" height="640"></video>
+    </div>
+</div>

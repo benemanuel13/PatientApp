@@ -1,0 +1,120 @@
+﻿@using TGUWeb.Models.WebApiModels;
+@model Intervention
+
+<h4>Intervention</h4>
+
+<div class="row">
+    <div class="col-md-2" style="font-weight:bold;">
+        Intervention Category:
+    </div>
+    <div class="col-md-2">
+        @Model.Category
+    </div>
+    <div class="col-md-2">
+        <a style="cursor: pointer;">Edit</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2" style="font-weight:bold;">
+        Intervention Type:
+    </div>
+    <div class="col-md-2">
+        @Model.Type
+    </div>
+    <div class="col-md-2">
+        <a style="cursor: pointer;">Edit</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2" style="font-weight:bold;">
+        Client Agreed:
+    </div>
+    <div class="col-md-2">
+        @if (Model.ClientAgreed)
+        {
+            @Html.Raw("Yes")
+        }
+        else
+        {
+            @Html.Raw("No")
+        }
+    </div>
+    <div class="col-md-2">
+        <a style="cursor: pointer;">Edit</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2" style="font-weight:bold;">
+        Section 117:
+    </div>
+    <div class="col-md-2">
+        @if (Model.Section117)
+        {
+            @Html.Raw("Yes")
+        }
+        else
+        {
+            @Html.Raw("No")
+        }
+    </div>
+    <div class="col-md-2">
+        <a style="cursor: pointer;">Edit</a>
+    </div>
+</div>
+
+<span style="font-weight:bold;">Goals:</span><br />
+
+@foreach (Goal goal in Model.Goals)
+{
+    <div class="row">
+        <div class="col-md-2">
+            @Html.Raw(goal.Text)
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-1">
+            <a style="cursor: pointer;">Edit</a>
+        </div>
+        <div class="col-md-2">
+            <a style="cursor: pointer;">Delete</a>
+        </div>
+    </div>
+}
+<a style="cursor: pointer;">Add Goal</a>
+<br /><br />
+
+<span style="font-weight:bold;">Activities:</span><br />
+@foreach (Activity activity in Model.Activities)
+{
+    <div class="row">
+        <div class="col-md-2">
+            @Html.Raw(activity.Text)
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-1">
+            <a style="cursor: pointer;">Edit</a>
+        </div>
+        <div class="col-md-2">
+            <a style="cursor: pointer;">Delete</a>
+        </div>
+    </div>
+}
+<a style="cursor: pointer;">Add Activity</a>
+<br /><br />
+
+<span style="font-weight:bold;">Clients Views:</span><br />
+
+<div class="row">
+    <div class="col-md-4">
+        <label style="font-weight:normal; white-space:pre-wrap;">@Model.ClientsView</label>
+    </div>
+    <div class="col-md-2">
+        <a style="cursor: pointer;">Edit</a>
+    </div>
+</div>
+
+<br />

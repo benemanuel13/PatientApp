@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Views.CrisisPlan.CrisisPlanSection">
+  <ContentView.Content>
+      <StackLayout Margin="0, 0, 0, 10">
+            <Label x:Name="Heading" FontAttributes="Bold" TextColor="LightBlue"/>
+            <Label x:Name="Text" TextColor="White"></Label>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

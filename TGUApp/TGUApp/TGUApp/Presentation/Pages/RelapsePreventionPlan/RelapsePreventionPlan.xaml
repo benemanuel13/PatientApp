@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             x:Class="TGUApp.Presentation.Pages.RelapsePreventionPlan.RelapsePreventionPlan"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Visible"  MenuButtonState="Visible"></view:NavBar>
+            <view:Heading x:Name="Heading" MainTitle="Your Relapse Prevention Plan" HorizontalOptions="Center"></view:Heading>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

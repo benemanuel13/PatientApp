@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:util="clr-namespace:TGUApp.Utility"
+             xmlns:view="clr-namespace:TGUApp.Presentation.Views.Shared"
+             x:Class="TGUApp.Presentation.Pages.HomePage"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackStyle}">
+            <view:NavBar MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackButtonState="Hidden" MenuButtonState="Visible" MenuTapped="NavBar_MenuTapped"></view:NavBar>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <!--<RowDefinition Height="75"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="75"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="CarePlanButton" Style="{StaticResource ButtonStyle}" Text="{Binding CarePlanButtonText}" Grid.Row="1" Clicked="CarePlanButton_Clicked" />
+                <Button x:Name="CrisisButton" Style="{StaticResource ButtonStyle}" Text="{Binding CrisisPlanButtonText}" Grid.Row="1" Grid.Column="1" Clicked="CrisisButton_Clicked"/>
+                <Button x:Name="RelapsePrevButton" Style="{StaticResource ButtonStyle}" Text="{Binding RelapsePreventionPlanButtonText}" Grid.Row="3" Clicked="RelapsePrevButton_Clicked" />
+                <Button x:Name="DiaryButton" Style="{StaticResource ButtonStyle}" Text="{Binding AppointmentDiaryButtonText}" Grid.Row="3" Grid.Column="1" Clicked="DiaryButton_Clicked" />
+                <Button x:Name="VideoLogButton" Style="{StaticResource ButtonStyle}" Text="{Binding VideoLogButtonText}" Grid.Row="5" Clicked="VideoLogButton_Clicked" />
+                <Button x:Name="TeamContactButton" Style="{StaticResource ButtonStyle}" Text="{Binding TeamContactDetailsButtonText}" Grid.Row="5" Grid.Column="1" Clicked="TeamContactButton_Clicked" />
+                <Button x:Name="InterventionButton" Style="{StaticResource ButtonStyle}" Text="{Binding InterventionVideosButtonText}" Grid.Row="7" Clicked="InterventionButton_Clicked" />
+                <Button x:Name="EmergencyButton" Style="{StaticResource EmergencyButtonStyle}" Text="{Binding EmergencyButtonText}" Grid.Row="7" Grid.Column="1" Clicked="EmergencyButton_Clicked" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

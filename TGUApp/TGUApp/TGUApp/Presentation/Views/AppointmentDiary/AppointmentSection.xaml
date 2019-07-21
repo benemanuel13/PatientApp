@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TGUApp.Presentation.Views.AppointmentDiary.AppointmentSection">
+  <ContentView.Content>
+      <StackLayout Orientation="Horizontal" Margin="0, 0, 0, 10">
+            <Label x:Name="Date" TextColor="White" WidthRequest="100" />
+            <Label x:Name="WhoWith" TextColor="White" WidthRequest="100" />
+            <Label x:Name="Where" TextColor="White" />
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

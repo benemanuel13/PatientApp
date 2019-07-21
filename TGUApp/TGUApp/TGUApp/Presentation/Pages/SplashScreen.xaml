@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:util="clr-namespace:TGUApp.Utility"
+             x:Class="TGUApp.Presentation.Pages.SplashScreen"
+              BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Label Text="Prototype Patient App"
+                FontSize="Large" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" />
+
+            <Image Grid.Row="3" MinimumHeightRequest="80" HeightRequest="80" Source="{util:ImageResource TGUApp.Presentation.Images.logo.jpg}" />
+            <!--<Image Grid.Row="5" MinimumHeightRequest="80" HeightRequest="80" Source="{util:ImageResource vanGoghEvents.Presentation.Images.NLlogo.png}" />
+            <Image Grid.Row="7" MinimumHeightRequest="80" HeightRequest="80" Source="{util:ImageResource vanGoghEvents.Presentation.Images.RTTlogo.jpg}" />
+            <Image Grid.Row="9" MinimumHeightRequest="80" HeightRequest="80" Source="{util:ImageResource vanGoghEvents.Presentation.Images.RTClogo.jpg}" />-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

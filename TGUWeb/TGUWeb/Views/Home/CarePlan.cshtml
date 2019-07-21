@@ -1,0 +1,14 @@
+﻿
+@using TGUWeb.Models.WebApiModels;
+@model CarePlan
+
+@{
+    ViewBag.Title = "Care Plan";
+}
+
+<h2>Patient Care Plan</h2>
+
+@foreach(Challenge challenge in Model.Challenges)
+{
+    @Html.Partial("_Challenge", challenge);
+}

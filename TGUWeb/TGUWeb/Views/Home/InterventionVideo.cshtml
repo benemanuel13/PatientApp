@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Intervention Video</title>
+</head>
+<body>
+    <div> 
+        <video controls width="640" height="480" id="video" src="http://tguapp.benemanuel.net/Home/ViewVideo"></video>
+    </div>
+</body>
+
+</html>
+
+<script language="javascript">
+    var video = document.getElementById('video');
+    video.addEventListener('click', function () { video.play(); }, false);
+    
+    window.onload = function () {
+        video.play();    
+    }
+</script>
